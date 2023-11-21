@@ -1,0 +1,65 @@
+@import url(https://db.onlinewebfonts.com/c/3147420f5573b22000d1e233cae7cdc9?family=PP+Hatton);
+*,
+*:before,
+:after{
+    box-sizing: border-box;
+}
+
+$primary:#d1cac3;
+$secondary:#0b0b0b;
+$alternate:#f4efe9;
+
+html{
+    font-size: max(100vw/1920 *10);
+}
+body{
+    background-color: $primary;
+    color: $secondary;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+    padding: 3rem;
+}
+.nav_title span{
+    font-size: 1.6rem;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+}
+.hero_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+}
+.hero_gallery{
+    position: relative;
+    width: 100%;
+    height: 88rem;
+    perspective:1000;
+}
+.hero_gallery_frame{
+    position: absolute;
+    border:1px solid $secondary;
+    border-radius: 0.9rem;
+    overflow: hidden;
+    background-color: $alternate;
+    filter:drop-shadow(0 1.125px 36px rgba(0,0,0,0.15));
+    width: auto;
+    height: auto;
+}
